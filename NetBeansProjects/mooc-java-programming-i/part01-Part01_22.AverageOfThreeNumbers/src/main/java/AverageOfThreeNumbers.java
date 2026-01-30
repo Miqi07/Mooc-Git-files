@@ -7,6 +7,15 @@ public class AverageOfThreeNumbers {
         Scanner scanner = new Scanner(System.in);
 
         // Write your program here
+  System.out.println("Give the first number:");
+        int no1 =Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the second number:");
+        int num2 = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the third number:");
+        int num3 =Integer.valueOf(scanner.nextLine());
+        int sum =no1+num2+num3;
+        double average = 1.0*sum/3;
+        System.out.println("The average is "+average);
 
     }
 }

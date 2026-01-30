@@ -7,6 +7,12 @@ public class AverageOfTwoNumbers {
         Scanner scanner = new Scanner(System.in);
 
         // Write your program here
-
+       System.out.println("Give the first number:");
+        int no1 =Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the second number:");
+        int num2 = Integer.valueOf(scanner.nextLine());
+        int sum =no1+num2;
+        double average = 1.0*sum/2;
+        System.out.println("The average is "+average);
     }
 }
