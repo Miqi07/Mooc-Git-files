@@ -9,33 +9,20 @@ public class AgeOfTheOldest {
         int oldest = 0;
 
         while (true) {
-            String agename = scanner.nextLine();
-
-            if (agename.isEmpty()) {
+            String input = scanner.nextLine();
+            if (input.equals("")) {
                 break;
             }
-            String[] parts = agename.split(",");
-            int[] store = new int[parts.length];
 
-            for (int i = 0; i < parts.length; i++) {
+            String[] parts = input.split(",");
+            // We know the age is ALWAYS at index 1 in this fixed format
+            int age = Integer.valueOf(parts[1]);
 
-                int age = Integer.valueOf(parts[1]);
-                store[i] = age;
-
+            // Comparison logic: Only update if the new age is bigger
+            if (age > oldest) {
+                oldest = age;
             }
-            int guard = store[0];
-
-            for (int i = 0; i < parts.length; i++) {
-
-                if (guard < store[i]) {
-                    guard = store[i];
-                    guard += oldest;
-                }
-            }
-
         }
-
-        System.out.println("Age of the oldest: " + oldest);
+     System.out.println("Age of the oldest: " + oldest);
     }
-
 }
