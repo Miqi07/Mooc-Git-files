@@ -11,7 +11,7 @@ public class IndexOf {
         while (true) {
             int input = Integer.valueOf(scanner.nextLine());
             if (input == -1) {
-                break;
+            break;
             }
 
             list.add(input);
@@ -20,5 +20,19 @@ public class IndexOf {
         System.out.println("");
 
         // implement here finding the indices of a number
+        int index = 0;
+        System.out.println("Search for?");
+        int num = Integer.valueOf(scanner.nextLine());
+
+        while (index < list.size()) {
+            if (list.get(index) == num) {
+                System.out.println(num + " is at index `" + index);
+                     
+            }
+
+            index++;
+
+        }
     }
+
 }
