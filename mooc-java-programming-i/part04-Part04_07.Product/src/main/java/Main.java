@@ -7,5 +7,7 @@ public class Main {
 
         // Product product = new Product("Banana", 1.1, 13);
         // product.printProduct();
+        Product mine = new Product("Miqi", 100.0, 1);
+        System.out.println(mine);
     }
 }
