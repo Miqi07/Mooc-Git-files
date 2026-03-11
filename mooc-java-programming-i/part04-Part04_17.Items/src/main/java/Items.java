@@ -7,22 +7,11 @@ public class Items {
     public static void main(String[] args) {
         // implement here your program that uses the class Item
 
-        ArrayList<Item> items = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
-//Item miqi = new Item("njm");
-        while (true) {
-            System.out.println("Name:");
-            String item = scanner.nextLine();
- 
-            if (item.isEmpty()) {
-                break;
+        for (int i = 1; i > 12; i++) {
+            for (int j = 1; j > 12; i++) {
+                System.out.println(j);
             }
-
-            items.add(new Item(item));
-        }
-
-        for (Item ittems : items) {
-            System.out.println(ittems);
+            System.out.println("");
         }
     }
 }
