@@ -32,4 +32,39 @@ public class Money {
         return this.euros + "." + zero + this.cents + "e";
     }
 
+    public Money plus(Money addition) {
+
+        Money newMoney = new Money(addition.euros + this.euros, addition.cents + this.cents);
+        return newMoney;
+    }
+
+    public boolean lessThan(Money compared) {
+        int minuseuros = this.euros - compared.euros();//30
+        int minuscents = this.cents - compared.cents();//23
+
+        if (minuscents < 0) {
+            minuscents += 100;
+            minuseuros -= 1;
+        }
+        if (minuseuros < 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public Money minus(Money decreaser) {
+
+        int euroDiff = this.euros - decreaser.euros;//10-0
+        int centDiff = this.cents - decreaser.cents;//0-
+
+        if (centDiff < 0) {
+            centDiff += 100;
+            euroDiff -= 1;
+
+        }
+        if (this.euros < 0) {
+            return new Money(0, 0);
+        }
+        return new Money(euroDiff, centDiff);
+    }
 }
