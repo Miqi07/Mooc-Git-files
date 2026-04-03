@@ -1,4 +1,4 @@
-MY PRORAMMING ACTIVITIES AND COURSE WORK (BAGONZA IMRAN MIQDAD)
+PRORAMMING ACTIVITIES AND COURSE WORK (BAGONZA IMRAN MIQDAD)
 A collection of high-level Java logic modules designed for systems architecture and robotics. This project focuses on Object-Oriented Programming (OOP) and efficient decision-making algorithms.
 
 Key Features
