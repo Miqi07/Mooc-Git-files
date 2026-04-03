@@ -17,3 +17,6 @@ Concepts: Encapsulation, ArrayLists, and Conditional Logic.
 
 "I am building these modules not just as exercises, but as the foundation for a future software ecosystem.
 My goal is to bridge complex logic with physical hardware (Robotics)."
+
+HOW TO RUN
+1. Clone the repo. 2. Open in NetBeans. 3. Run Main.java.
